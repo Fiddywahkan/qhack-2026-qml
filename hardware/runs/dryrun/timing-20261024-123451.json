@@ -1,0 +1,38 @@
+{
+  "backend": "fake_fez",
+  "real": false,
+  "pair": [
+    96,
+    103
+  ],
+  "gate_err": 0.004609295661890445,
+  "ro_err": 0.00537109375,
+  "transpile_seed": 7,
+  "max_exec_s": 120,
+  "jobs": [
+    {
+      "tag": "t20x100",
+      "job_id": "39a51a60-063b-49fa-8524-a2f2fb025115",
+      "circuits": 20,
+      "shots": 100,
+      "usage_s": null,
+      "wall_s": 22.733802795410156
+    },
+    {
+      "tag": "t20x2000",
+      "job_id": "ed05998e-a431-440e-bf37-f5d4554d5b27",
+      "circuits": 20,
+      "shots": 2000,
+      "usage_s": null,
+      "wall_s": 24.295084714889526
+    },
+    {
+      "tag": "t200x100",
+      "job_id": "a744d43a-e491-4285-a0ed-0ac515fd0ef2",
+      "circuits": 200,
+      "shots": 100,
+      "usage_s": null,
+      "wall_s": 36.42792773246765
+    }
+  ]
+}

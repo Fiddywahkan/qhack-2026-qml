@@ -1,0 +1,7 @@
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+# never commit credentials
+apikey.json
+qiskit-ibm.json
+.env

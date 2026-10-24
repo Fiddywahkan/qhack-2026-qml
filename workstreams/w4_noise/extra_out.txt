@@ -1,0 +1,3 @@
+sum w = 7.772e-16, b=-0.1255, n_dev=813
+a=0.8877 model-based (full dev): disagreements 2 / 813; threshold shift b(1-a)=-0.0141; near=5, disagreers near=[True, True]
+a=0.9161 model-based (full dev): disagreements 2 / 813; threshold shift b(1-a)=-0.0105; near=5, disagreers near=[True, True]

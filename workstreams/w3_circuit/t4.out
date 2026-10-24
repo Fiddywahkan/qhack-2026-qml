@@ -1,0 +1,11 @@
+best (4, 5) original lvl 0 mean|dk| 0.0109  mean bias 0.0001
+best (4, 5) original lvl 1 mean|dk| 0.0091  mean bias -0.0005
+best (4, 5) original lvl 3 mean|dk| 0.0070  mean bias -0.0005
+best (4, 5) merged lvl 0 mean|dk| 0.0094  mean bias -0.0003
+best (4, 5) merged lvl 3 mean|dk| 0.0070  mean bias -0.0005
+median (40, 41) original lvl 0 mean|dk| 0.0233  mean bias 0.0019
+median (40, 41) original lvl 1 mean|dk| 0.0215  mean bias 0.0015
+median (40, 41) original lvl 3 mean|dk| 0.0191  mean bias 0.0015
+median (40, 41) merged lvl 0 mean|dk| 0.0217  mean bias 0.0016
+median (40, 41) merged lvl 3 mean|dk| 0.0191  mean bias 0.0015
+shot-noise floor approx mean|dk| ~ 0.0063

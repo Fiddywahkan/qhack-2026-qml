@@ -1,0 +1,20 @@
+exact classifier dev acc on subset: 0.9806451612903225 n= 155
+raw fit k_noisy=a*k+c: a=0.8877 c=0.0282 resid std=0.0037 max=0.0139; corr=0.99983
+  quad coeffs [-7.36064855e-04  8.88281821e-01  2.81532307e-02]
+ro fit k_noisy=a*k+c: a=0.9161 c=0.0200 resid std=0.0031 max=0.0128; corr=0.99988
+  quad coeffs [3.37970697e-04 9.15875712e-01 1.99949853e-02]
+shot sd approx 0.0035355339059327377
+identity raw k: [0.91935 0.9182  0.911   0.91565]  ro-mit: [0.93996741 0.93873872 0.93131047 0.93615399]
+| setting | extra circuits (shots each) | mean|dk| | max|dk| | agree w/ exact | dev acc |
+| unmitigated | 0 | 0.0204 | 0.0861 | 0.994 (far 1.000) | 0.987 |
+| RO mitigation | 4 (cal) | 0.0153 | 0.0671 | 0.994 (far 1.000) | 0.987 |
+| depol rescale, identity only (no RO) | 4 identity | 0.0033 | 0.0157 | 0.994 (far 1.000) | 0.987 |
+| RO + depol rescale (identity) | 4 cal + 4 id | 0.0028 | 0.0131 | 0.994 (far 1.000) | 0.987 |
+| depol affine fit on 40 cal pairs (no RO) | 40 | 0.0033 | 0.0158 | 0.994 (far 1.000) | 0.987 |
+| RO + affine fit (40 cal pairs) | 4 + 40 | 0.0027 | 0.0145 | 0.994 (far 1.000) | 0.987 |
+params: id-only a,c 0.8880666666666666 0.02798333333333336  RO+id 0.9153901957328875 0.021152451066778127  fit 0.8870482571347331 0.028393129877146865  RO+fit 0.9154036057026076 0.019806703931084465
+RO+affine fit with 5 cal pairs: agreement mean 0.994 min 0.994
+RO+affine fit with 10 cal pairs: agreement mean 0.994 min 0.994
+RO+affine fit with 20 cal pairs: agreement mean 0.994 min 0.994
+f bias: mean(fn-fex)=0.0026 ; sum w=0.0000 b=-0.1255
+disagree unmitig: n= 1  |fex| of disagreers [0.00091536]

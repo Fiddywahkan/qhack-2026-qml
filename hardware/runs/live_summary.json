@@ -1,0 +1,78 @@
+{
+  "rows": {
+    "fixed1024": {
+      "agree": 1.0,
+      "agree_random": 1.0,
+      "agree_hard": 1.0,
+      "accuracy": 0.95,
+      "jobs": 1,
+      "shots": 414720,
+      "usage_s": 110.0,
+      "wall_s": 134.1612639427185,
+      "noise_fit": [
+        0.9621547453593229,
+        0.013387995401420463
+      ]
+    },
+    "fixed48": {
+      "agree": 1.0,
+      "agree_random": 1.0,
+      "agree_hard": 1.0,
+      "accuracy": 0.95,
+      "jobs": 1,
+      "shots": 19200,
+      "usage_s": 8.0,
+      "wall_s": 18.68607473373413
+    },
+    "direct_d2_rd250": {
+      "agree": 1.0,
+      "agree_random": 1.0,
+      "agree_hard": 1.0,
+      "accuracy": 0.95,
+      "jobs": 9,
+      "shots": 12880,
+      "usage_s": 22.0,
+      "wall_s": 57.69005107879639,
+      "capped": 0
+    },
+    "direct_d2_rd50": {
+      "agree": 1.0,
+      "agree_random": 1.0,
+      "agree_hard": 1.0,
+      "accuracy": 0.95,
+      "jobs": 9,
+      "shots": 10896,
+      "usage_s": 18.0,
+      "wall_s": 54.667118549346924,
+      "capped": 1
+    },
+    "direct_d4_rd50": {
+      "agree": 1.0,
+      "agree_random": 1.0,
+      "agree_hard": 1.0,
+      "accuracy": 0.95,
+      "jobs": 5,
+      "shots": 7616,
+      "usage_s": 10.0,
+      "wall_s": 31.49241042137146,
+      "capped": 0
+    },
+    "direct_fixed2048_rd50": {
+      "agree": 1.0,
+      "agree_random": 1.0,
+      "agree_hard": 1.0,
+      "accuracy": 0.95,
+      "jobs": 1,
+      "shots": 40960,
+      "usage_s": 5.0,
+      "wall_s": 10.032435655593872,
+      "capped": 0
+    }
+  },
+  "n": 20,
+  "backend": "ibm_fez",
+  "pair": [
+    142,
+    143
+  ]
+}

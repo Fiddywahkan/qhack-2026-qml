@@ -1,0 +1,12 @@
+subset 155 near 5 sum(w)=7.77e-16
+| row | agree all | agree non-near | worst non-near dis | strict | #nonnear>5%% | dev acc | mean shots | p95 shots | rounds | capped frac | mean|dk| | a_hat (mean,sd) | calib shots/batch | non-near mean/p95 shots | near-tie mean shots |
+| BASELINE: template[0,1], fixed 1024, no mitig | 0.9879 | 1.0000 | 0.000 | True | 0 | 0.9894 | 20480 | 20480 | 1.00 | 0.000 | 0.0200 | n/a | 0 | 20480 / 20480 | 20480 |
+| OPTIMIZED: W3(4,5)+Pocock/Neyman+mitig | 0.9917 | 0.9999 | 0.010 | True | 0 | 0.9847 | 1859 | 5130 | 2.44 | 0.026 | 0.0048 | 0.9740, 0.0056 | 8192 | 698 / 2570 | 36688 |
+| abl -W3 circuit (template[0,1]) +adaptive+mitig | 0.9906 | 0.9998 | 0.010 | True | 0 | 0.9863 | 1989 | 5131 | 2.63 | 0.026 | 0.0200 | 0.8866, 0.0062 | 4096 | 830 / 2571 | 36777 |
+| abl -adaptive (fixed 1024) W3+mitig | 0.9894 | 1.0000 | 0.000 | True | 0 | 0.9836 | 20480 | 20480 | 1.00 | 0.000 | 0.0048 | 0.9736, 0.0060 | 8192 | 20480 / 20480 | 20480 |
+| abl -mitigation: W3+adaptive, a=1 | 0.9905 | 1.0000 | 0.005 | True | 0 | 0.9856 | 1858 | 5130 | 2.44 | 0.025 | 0.0048 | n/a | 0 | 697 / 2570 | 36696 |
+| extra: W3 only (fixed 1024, no mitig) | 0.9898 | 1.0000 | 0.000 | True | 0 | 0.9855 | 20480 | 20480 | 1.00 | 0.000 | 0.0048 | n/a | 0 | 20480 / 20480 | 20480 |
+| extra: template+adaptive, no mitig | 0.9882 | 0.9998 | 0.005 | True | 0 | 0.9898 | 2008 | 5131 | 2.63 | 0.025 | 0.0200 | n/a | 0 | 855 / 2571 | 36595 |
+| NOISELESS adaptive (exact K) | 0.9919 | 1.0000 | 0.005 | True | 0 | 0.9845 | 1838 | 5129 | 2.39 | 0.026 | 0.0000 | n/a | 0 | 666 / 2570 | 37004 |
+template true a (LS thru 1/4) 0.8881  identity-circuit k: [0.9147 0.9164 0.9149 0.9134] cz id: [6. 6. 6. 6.] mean cz dev 6.00
+W3 true a (LS thru 1/4) 0.9738  identity-circuit k: [0.9912 0.9911 0.9911 0.9911] cz id: [0. 0. 0. 0.] mean cz dev 2.86

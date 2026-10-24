@@ -1,0 +1,50 @@
+{
+  "backend": "ibm_fez",
+  "real": true,
+  "pair": [
+    142,
+    143
+  ],
+  "gate_err": 0.0020807898271912872,
+  "ro_err": 0.00830078125,
+  "transpile_seed": 7,
+  "max_exec_s": 60,
+  "jobs": [
+    {
+      "tag": "t20x100",
+      "job_id": "dbeg7ingdj9s73flnqhg",
+      "circuits": 20,
+      "shots": 100,
+      "rep_delay": null,
+      "usage_s": 3,
+      "wall_s": 14.907968044281006
+    },
+    {
+      "tag": "t20x2000",
+      "job_id": "dbeg7mfpc3tc739lkri0",
+      "circuits": 20,
+      "shots": 2000,
+      "rep_delay": null,
+      "usage_s": 13,
+      "wall_s": 24.85146427154541
+    },
+    {
+      "tag": "t200x100",
+      "job_id": "dbeg7svsstms73fc0r00",
+      "circuits": 200,
+      "shots": 100,
+      "rep_delay": null,
+      "usage_s": 8,
+      "wall_s": 15.489465236663818
+    },
+    {
+      "tag": "t20x2000_rd50",
+      "job_id": "dbeg80ngdj9s73flnr4g",
+      "circuits": 20,
+      "shots": 2000,
+      "rep_delay": 5e-05,
+      "usage_s": 5,
+      "wall_s": 13.910289287567139
+    }
+  ]
+}
